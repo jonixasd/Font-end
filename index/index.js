@@ -23,3 +23,4 @@ console.log(Math.floor(Math.random() * 43.8));
 console.log(Math.ceil(43.8));
 // isInteger:檢查是否整數
 console.log(Number.isInteger(2017));
+console.log("this is for testing.");
