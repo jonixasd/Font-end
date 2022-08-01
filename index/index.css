@@ -1,0 +1,47 @@
+html {
+  background-color: rgb(43, 43, 43);
+}
+
+body {
+  color: rgb(255, 255, 255);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 造訪過 */
+a:visited {
+  color: coral;
+}
+
+/* 未造訪 */
+a:link {
+  color: aqua;
+}
+
+/* 選擇/進行 */
+a:hover,
+a:active {
+  color: deepskyblue;
+}
+
+table,
+tr,
+th,
+td,
+caption {
+  border: 1px solid rgb(255, 255, 255);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-collapse: collapse;
+  padding: 0.5rem;
+}
+
+.hd {
+  color: aquamarine;
+}
+
+#hg {
+  color: blueviolet;
+}
+
+h1 {
+  color: blueviolet;
+}

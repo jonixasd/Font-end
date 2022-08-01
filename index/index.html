@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="jonix" />
+    <meta
+      name="description"
+      content="this is the page for jonix to learn web development"
+    />
+    <title>wormhole</title>
+    <!--"icon"用途-->
+    <!--"type"檔案類型-->
+    <link rel="icon" href="img/jp.png" />
+    <link rel="stylesheet" href="index.css" type="text/css" />
+  </head>
+
+  <!-- 加入header,footer,main,article,section 不會改變網頁的外觀，但會讓瀏覽器分辨文章的位置(輔助功能)-->
+
+  <body>
+    <div>
+      <a href="index.html">HOME PAGE</a>&nbsp;
+      <a href="index2.html">ABOUT ME</a>&nbsp;
+      <a href="/FS.1/FS1.html">FS1</a>&nbsp;
+      <a href="/jinux/jinux.html">JINUX</a>&nbsp;
+    </div>
+    <script src="index.js"></script>
+    <header>
+      <!--網頁頁首-->
+      <!--"section"裡面要有標題-->
+      <section id="html2">
+        <h2>Wormhole</h2>
+        <p>THIS IS THE PAGE FOR ME</p>
+
+        <!--"nav"導覽列,主要裝導航連結-->
+        <!-- aria-label讓網頁知道這是甚麼 -->
+        <nav aria-label="sdf">
+          <h2>links</h2>
+          <ul>
+            <li>
+              <a href="#control">control panel</a>
+            </li>
+            <li>
+              <a href="#target">web development</a>
+            </li>
+            <li>
+              <a href="#Imformation">planning a vacation</a>
+            </li>
+            <li>
+              <a href="#contact">contact me</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <hr />
+    <main>
+      <!-- id:可用來連接連結 -->
+      <article id="target">
+        <!-- 每頁只能有一個main -->
+        <h3>This is my <em>target</em></h3>
+        <ul>
+          <li>Learn Java</li>
+          <li>Learn Python</li>
+          <li>Maybe make a page for my school</li>
+        </ul>
+
+        <hr />
+
+        <h3>Testing Area</h3>
+        <p>
+          website <strong>development</strong> <br />create
+          <em>Jonix</em>&nbsp;&nbsp;&nbsp;great
+          <!-- <em>和<strong>雖然顯示和<i>和<b>一樣,但<em>和<strong>是代表"重要的" -->
+          <!-- <b><strong> 都是粗體
+               <i><em> 都是斜體 
+               <ins><u> 都是下劃線
+               <del><s> 都是刪除線 -->
+          <!-- &nbsp;:空格 -->
+        </p>
+      </article>
+
+      <hr />
+      <article id="Imformation">
+        <h2>Information</h2>
+        <!-- article:可獨立存在,具有更高的獨立性及完整性/section:文件中的一個區塊(都會包含title/heading) -->
+        <section>
+          <h3>Instagram</h3>
+          <!--&lt is "<" -->
+          <!--&gt is ">"-->
+          <p>&lt;&lt;&lt;&copy;Jonix&copy;&gt;&gt;&gt;</p>
+          <h3>Testing Area</h3>
+          <p><abbr title="welcome to my page">wtmp</abbr></p>
+          <p>
+            <abbr title="i am going to learn some code knowledge">sdf</abbr>
+          </p>
+          <p>And this is my first time to learn something new</p>
+          <!-- ul is a dot -->
+          <!-- ol are the numbers -->
+          <ol>
+            <li>
+              <p>for the testing</p>
+            </li>
+            <li>
+              <address>
+                Taiwan,tainan city this is my hometown
+                <br />i am only sixteen years old
+              </address>
+              <figure>
+                <img
+                  src="img/JuiceBox.png"
+                  alt=""
+                  title="it just a juicebox"
+                  width="112"
+                  height="112"
+                />
+                <!-- figure,figcaption可以放文字在圖片下面 -->
+                <figcaption>this is for testing</figcaption>
+              </figure>
+            </li>
+          </ol>
+        </section>
+        <!--this information is for people to read the code,it won't show on the page-->
+        <hr />
+        <section>
+          <h3>This is my plan</h3>
+          <ul>
+            <li>create a website</li>
+            <li>information</li>
+            <li>development</li>
+            <li>
+              and this is my website link
+              <!-- 縮寫 -->
+              <abbr title="jonix"><a href="index.html">WEBSITE</a></abbr>
+            </li>
+            <li>
+              <!-- 測攔註解 -->
+              <aside>
+                <!-- details是裡面的內容 -->
+                <details>
+                  <!-- summary是標籤 -->
+                  <summary>Details</summary>
+                  <p>
+                    Maybe I can go to <mark>google</mark> be a app engineer.
+                  </p>
+                  <p>
+                    I start code a <time datetime="08:00">8 am</time> to
+                    <time datetime="15:00">3 pm</time>
+                  </p>
+                  <!-- 如果你要寫像是日歷或是有關時間/日期的網站,time很重要 -->
+                  <!-- datetime 可以放日期和時間 -->
+                  <!-- 小時顯示:PT小時H EX:PT6H-->
+                </details>
+              </aside>
+              <br />
+              <!--table(表格),tr,td,th(表格表頭)-->
+              <table>
+                <!-- caption:關於表格的簡介 -->
+                <caption>
+                  Weekly Activity
+                </caption>
+                <!-- table head -->
+                <thead>
+                  <tr>
+                    <th scope="col">hi</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Activity</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Morning</th>
+                    <td>
+                      <time datetime="08:00">8am</time>-<time datetime="08:00"
+                        >8pm</time
+                      >
+                    </td>
+                    <td>Enjoy my dinner</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Break</th>
+                    <td>
+                      <time datetime="05:00">5am</time>-<time datetime="06:00"
+                        >6pm</time
+                      >
+                    </td>
+                    <td>Eat my breakfast</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Afternoon</th>
+                    <td>
+                      <time datetime="03:00">3am</time>-<time datetime="04:00"
+                        >4pm</time
+                      >
+                    </td>
+                    <td>Do some exercise</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Evening</th>
+                    <td rowspan="2">All the other times</td>
+                    <td>free time</td>
+                  </tr>
+                  <tr>
+                    <th>Night</th>
+                    <td>Sleep</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <!-- colspan:橫跨格數 -->
+                    <td colspan="3">
+                      This is my Weekly tasks,and I do all these thins in one
+                      day
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </li>
+          </ul>
+        </section>
+
+        <hr />
+        <!-- dl,dt,dd:有標題和內文的清單 -->
+        <section>
+          <h3>About me</h3>
+          <dl>
+            <dt>New York</dt>
+            <dd><strong>My dream place</strong></dd>
+
+            <dt>Tainan</dt>
+            <dd>My hometown</dd>
+
+            <dt>Taiwan</dt>
+            <dd>Always raining day</dd>
+          </dl>
+        </section>
+        <div id="control">
+          <p class="hd">hello</p>
+          <p class="hd">hi</p>
+          <!-- 可以有兩個一樣的class,但id不能 -->
+          <p id="hg">of</p>
+          <p id="h">hu</p>
+        </div>
+        <!-- div/span:佔據的空間大小不同 -->
+        <!-- p會在段落前加一個空行,div不會 -->
+        <span> this is for testing </span>
+      </article>
+
+      <hr />
+
+      <article id="contact">
+        <h2>Contact me</h2>
+        <p>I'd really like to hear from your!</p>
+        <!-- form:表單 -->
+        <form action="https;//httpbin.org/get" method="get">
+          <!-- label:輸入方格的名稱 -->
+          <!-- fieldset:框框 -->
+          <fieldset>
+            <legend>Personal Information</legend>
+            <p>
+              <label for="FirstName">First name:</label>
+              <!-- input:輸入方格 -->
+              <!-- autofocus -->
+              <input
+                type="text"
+                name="FirstName"
+                id="FirstName"
+                placeholder="Kevin"
+                autocomplete="on"
+                required
+              />
+            </p>
+            <p>
+              <!-- placehoder:範例 -->
+              <label for="LastName">Last name:</label>
+              <!-- input:輸入方格 -->
+              <input
+                type="text"
+                name="LastName"
+                id="LastName"
+                placeholder="Mark"
+                required
+              />
+            </p>
+            <p>
+              <!-- placehoder:範例 -->
+              <label for="Password">Password:</label>
+              <!-- input:輸入方格 -->
+              <input
+                type="text"
+                name="Password"
+                id="Password"
+                placeholder="Password"
+                required
+              />
+            </p>
+            <p>
+              <!-- placehoder:範例 -->
+              <label for="phone">Phone:</label>
+              <!-- input:輸入方格 -->
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="(+886)5555555555"
+                pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                required
+              />
+            </p>
+            <p>
+              <!-- placehoder:範例 -->
+              <label for="decade">decade:</label>
+              <!-- input:輸入方格 -->
+              <input
+                type="number"
+                name="decade"
+                id="decade"
+                min="1950"
+                max="2020"
+                step="10"
+                value="1980"
+              />
+            </p>
+            <p>
+              <label for="coffee">Fav Coffee</label>
+
+              <select name="coffee" id="coffee" multiple size="5">
+                <optgroup label="Coffees">
+                  <option value="regular coffee">Regular Coffee</option>
+                  <option value="=iced Coffee">Iced Coffee</option>
+                </optgroup>
+                <optgroup label="Espresso Drinks">
+                  <option value="latte">Latte</option>
+                  <option value="cappuccino">Cappuccino</option>
+                  <option value="cortado">Cortado</option>
+                  <option value="americano">Americano</option>
+                </optgroup>
+              </select>
+            </p>
+            <!-- <p>
+            <label for="coffee">Favorite Coffee:</label>
+            <input type="text" name="coffee" id="coffee" list="coffee-list" />
+            <datalist id="coffee-list">
+              <option value="coffee"></option>
+              <option value="latte"></option>
+              <option value="espresso"></option>
+              <option value="cortado"></option>
+              <option value="americano"></option>
+              <option value="other"></option>
+            </datalist>
+          </p> -->
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>What is ur fav food</legend>
+            <p>
+              <!-- input:輸入 -->
+              <input type="radio" name="food" id="tacos" value="tacos" />
+              <label for="tacos">Tacos</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="pizza" value="pizza" />
+              <label for="pizza">Pizza</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="other" value="other" />
+              <label for="other">Other</label>
+            </p>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Do u have pats?</legend>
+            <p>
+              <input type="checkbox" name="pets" id="dog" value="dog" />
+              <label for="dog">Dog</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pets" id="cat" value="cat" />
+              <label for="cat">Cat</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pets" id="fish" value="fish" />
+              <label for="fish">Fish</label>
+            </p>
+            <p>
+              <input
+                type="checkbox"
+                name="pets"
+                id="otherPet"
+                value="otherPet"
+              />
+              <label for="other">Other</label>
+            </p>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Send me a note</legend>
+            <label for="message">your messages</label>
+            <br />
+            <textarea
+              name="massages"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="type ur massage here"
+            ></textarea>
+          </fieldset>
+          <br />
+          <button type="submit">Submit</button>
+          <button
+            type="submit"
+            formaction="https://httpbin.org/post"
+            formmethod="post"
+          >
+            post
+          </button>
+          <button type="reset">Reset</button>
+        </form>
+      </article>
+    </main>
+
+    <hr />
+    <footer>
+      <!--網頁頁尾-->
+      <p>
+        <a href="#">GO TO THE TOP OF THE PAGE</a>
+      </p>
+    </footer>
+  </body>
+</html>

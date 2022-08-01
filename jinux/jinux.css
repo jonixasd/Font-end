@@ -1,0 +1,90 @@
+.main-heading {
+  color: blue;
+}
+
+#main-heading-id {
+  color: rgb(255, 255, 255);
+}
+
+/* CCS */
+.fist-div p {
+  color: red;
+}
+
+.sec-div h1 {
+  color: aquamarine;
+}
+/* CSS */
+
+html {
+  background-color: rgb(43, 43, 43);
+}
+
+body {
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+}
+
+.wormhole {
+  width: 450px;
+  height: 300px;
+}
+
+table,
+td,
+th {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.areavid {
+  width: 300px;
+  height: 200px;
+}
+
+th,
+td {
+  font-size: 18px;
+}
+
+a:visited {
+  color: coral;
+}
+
+a:link {
+  color: aqua;
+}
+
+a:hover,
+a:active {
+  color: deepskyblue;
+}
+
+.imgix {
+  width: 25%;
+  height: 25%;
+}
+
+/* type[attribute*=value] */
+/* 包含index的link都會受到css影響 */
+/* selector:id=>class=>type */
+
+a[href*="index"] {
+  color: blueviolet;
+}
+
+.description li {
+  color: darkorange;
+}
+
+h3.h3-color {
+  color: aquamarine;
+}
+
+ol li {
+  color: chartreuse;
+}
+
+.one,
+.one1 {
+  color: darkseagreen;
+}
